@@ -57,8 +57,21 @@
         p.diary {
             font-size: 120%;
         }
-
-    </style>
+        /* SIMPLE DEMO STYLES */
+        .container {
+            margin: 20px 0;
+            margin-left: 5vw;
+            max-width: 700px;
+        }
+        .container img {
+            height: 30vh;
+            padding-right: 20px;
+        }
+        x {
+            padding: 0 10px;
+        }
+      </style>
+      <link rel="stylesheet" type="text/css" href="zoom.css">
 </head>
 
 <body>
@@ -66,15 +79,39 @@
         <h1 id="head">日记</h1>
         <p id="head">ctrl+f快速寻找日期 (mac: command+f)</p>
         <p id="head">brackets快速创建新悲伤日记：div.diary>h2.title+p.time+p.diary+hr.diary</p>
-        <p id="head">新的往前面创建</p>
+        <p id="head">新的往前面创建</p><br>
+        <p id="head">2.0更新：加入图片功能</p>
+        <p id="head">使用方法：<br><x></x>&lt;div class="container"&gt;&lt;img src="" data-action="zoom"&gt;&lt;/div&gt;<br>src中引用图片</p>
     </section>
-    <!--div.diary>h2.title+p.time+p.diary+hr.diary-->
-
-
+<!--
+    div.diary>h2.title+p.time+p.diary+hr.diary
+    <div class="container">
+        <img src="" data-action="zoom">
+    </div>
+-->
+    <div class="diary">
+        <h2 class="title">大功告成 2.0</h2>
+        <p class="time">2023.3.6</p>
+        <p class="diary">我真服了这个功能做了我四个小时。我一点也没学过js，然后这个要js，就现学，真的累死我了，网上翻了十几个网页，然后还失败了很多次，好在最后还是成功了。以下是一个样例。目前兼容性有待提高，建议一篇放一张图片最多</p>
+        <div class="container">
+            <img src="images/i1.jpg" data-action="zoom">
+        </div>
+        <hr class="diary">
+    </div>
+    <div class="diary">
+        <h2 class="title">测试2</h2>
+        <p class="time">2023.3.6</p>
+        <p class="diary">测试图片2</p>
+        <div class="container">
+            <img src="images/i2.jpg" data-action="zoom">
+        </div>
+        <hr class="diary">
+    </div>
     <div class="diary">
         <h2 class="title">厌学</h2>
         <p class="time">2023.3.6</p>
-        <p class="diary">最近很厌学，非常非常厌学，一点学习也不想学。然后的话就做点自己感兴趣的事吧，最近钢琴每天都弹两三个小时。准备把我这个网站更新一下，加入图片功能！直接以后可以快速发图了，笑死我了，起飞！</p>
+        <p class="diary">最近很厌学，非常非常厌学，一点学习也不想学。然后的话就做点自己感兴趣的事吧，最近钢琴每天都弹两三个小时。准备把我这个网站更新一下，加入图片功能。直接以后可以快速发图了。对。弄了我他妈俩小时了没搞定操你妈。</p>
+        <div class="container"><img src="images/i2.jpg" data-action="zoom"></div>
         <hr class="diary">
     </div>
     <div class="diary">
@@ -540,6 +577,9 @@
         <p class="diary">哎呀我真他马勒戈壁的服了啊！这他妈是什么啊！怎么分手了啊！你他妈的平时不给我发消息就算了，你妈的好不容易早上起床你给我发消息你他马勒戈壁和我提分手，你怎么这么狗生啊！！！老子他马勒戈壁谈没谈多久就他吗了个逼要研究他妈分手，分手后怎么挽回，你他妈是不是狗生啊！！！！！！！！我真他妈的无语了，真服了，你他妈伤心死我了，真的妈的伤心死了，真他妈伤心，my first love broke my heart for the first time --- Baby by Justin Bieber。我真的无语了啊！你马勒戈壁怎么这么伤心我，晚上他马勒戈壁和你最后一次说话的时候你他妈的逼心态还这么好，他妈逼有说有笑还他妈在外面吃饭，我真他妈的服了啊！你他妈哭死我算了。真他妈服了，分手了，他妈半个月就分手了，你他妈得抑郁症，确实他马勒戈壁的可怜，可你也他妈不能这样不把我当人，上我的心啊！你怎么可以这样，伤心死我了，悲痛欲绝。真的服了啊！当时他妈完全懵逼了还给你发520转账，还好你他妈没收，不然我他妈血本无归。操！无语了初恋这么他妈使我崩溃。</p>
         <hr class="diary">
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="zoom.js"></script>
 </body>
 
 </html>
